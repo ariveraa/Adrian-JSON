@@ -1,0 +1,40 @@
+.user-container{
+    display:flex;
+    height: 500px;
+    width: 100%;
+}
+.user-table{
+    border: 1px solid #ddd;
+
+}
+
+h3{
+    background-color:#B7B7B7;
+}
+.loading{
+
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.spinner{
+    display:flex;
+    justify-content: center;
+}
+
+.spinner::after{
+    content:"";
+    width: 100px;
+    height: 100px;
+    border:20px solid #dddddd;
+    border-top-color: #B7B7B7;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    to{
+        transform:rotate(1turn)
+    }
+}
