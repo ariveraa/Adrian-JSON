@@ -35,10 +35,10 @@ window.addEventListener("load",()=>{
                         postInfo.appendChild(postBody)
                         postContainer.appendChild(postInfo)
                     })
-                    spinner.style.display = 'none'
+                    setTimeout(()=>spinner.style.display = 'none',500 )
                 })
             })
-            spinner.style.display = 'none'
+            setTimeout(()=>spinner.style.display = 'none',500 )
         })
     })
 
